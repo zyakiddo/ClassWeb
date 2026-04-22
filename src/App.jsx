@@ -217,13 +217,14 @@ function App() {
                     <p className="text-blue-600 font-bold tracking-[0.1em] text-[10px] uppercase mb-1">{student.role}</p>
                   </div>
                   
-                  <div className="absolute bottom-4 left-4 right-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 pointer-events-none group-hover:pointer-events-auto">
-                    <a href={student.ig} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full bg-slate-950 text-white hover:bg-blue-600 py-3 rounded-xl font-bold text-sm transition-colors duration-300 shadow-md">
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+{/* Tombol CONNECT (Mobile: Diperkecil & Selalu Muncul, Desktop: Ukuran Normal & Efek Hover) */}
+                  <div className="absolute bottom-3 md:bottom-4 left-3 right-3 md:left-4 md:right-4 opacity-100 translate-y-0 pointer-events-auto md:opacity-0 md:translate-y-4 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-500 md:pointer-events-none md:group-hover:pointer-events-auto">
+                    <a href={student.ig} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-1.5 md:gap-2 w-full bg-slate-950 text-white hover:bg-blue-600 py-2 md:py-3 rounded-lg md:rounded-xl font-bold text-[10px] md:text-sm transition-colors duration-300 shadow-md">
+                      <svg className="w-3 h-3 md:w-4 md:h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                       CONNECT
                     </a>
+                  </div>                  
                   </div>
-                </div>
               </AnimatedContent>
             ))}
           </div>
@@ -254,14 +255,13 @@ function App() {
                 />
 
                 {/* Tombol VIEW STORY (Pojok Kiri Bawah, Mengecil & Mengambang) */}
-{/* Tombol VIEW STORY (Kaca Transparan, Elegan & Minimalis) */}
-                <div className="absolute left-3 bottom-3 md:left-4 md:bottom-4 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                  {/* bg-black/30 membuatnya lebih transparan, border-white/30 mempertegas efek kaca */}
-                  <div className="bg-black/30 backdrop-blur-md text-white px-4 py-2 rounded-xl font-bold text-[9px] md:text-[10px] tracking-widest border border-white/30 shadow-sm hover:bg-black/40 transition-colors">
-                    VIEW STORY
-                  </div>
-                </div>        
+{/* Tombol VIEW STORY (Mobile: Selalu Muncul, Desktop: Efek Hover) */}
+            <div className="absolute left-3 bottom-3 md:left-4 md:bottom-4 opacity-100 translate-y-0 md:opacity-0 md:translate-y-2 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-300">
+              <div className="bg-black/30 backdrop-blur-md text-white px-4 py-2 rounded-xl font-bold text-[9px] md:text-[10px] tracking-widest border border-white/30 shadow-sm hover:bg-black/40 transition-colors">
+                VIEW STORY
               </div>
+            </div>          
+          </div>
             ))}
           </div>
         </div>
