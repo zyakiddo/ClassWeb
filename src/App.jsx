@@ -4,7 +4,7 @@ import BlurText from './BlurText';
 import TextType from './TextType';
 import TextPressure from './TextPressure';
 import AnimatedContent from './AnimatedContent';
-import SplashCursor from './SplashCursor';
+
 
 
 // --- DAFTAR DATA SISWA ---
@@ -82,18 +82,7 @@ function App() {
 
   return (
     <div className="font-sans text-slate-800 antialiased bg-slate-50">
-      <SplashCursor
-  DENSITY_DISSIPATION={9.5}
-  VELOCITY_DISSIPATION={1}
-  PRESSURE={0.05}
-  CURL={3}
-  SPLAT_RADIUS={0.1}
-  SPLAT_FORCE={5000}
-  COLOR_UPDATE_SPEED={10}
-  SHADING
-  RAINBOW_MODE={false}
-  COLOR="#A855F7"
-/>
+
       
       
       
