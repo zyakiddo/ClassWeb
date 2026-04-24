@@ -51,6 +51,20 @@ const galleryData = [
   { id: 23, image: 'moment23.jpeg' },
   { id: 24, image: 'moment24.jpeg' },
   { id: 25, image: 'moment25.jpeg' },
+  { id: 26, image: 'moment26.jpeg' },
+  { id: 27, image: 'moment27.jpeg' },
+  { id: 28, image: 'moment28.jpeg' },
+  { id: 29, image: 'moment29.jpeg' },
+  { id: 30, image: 'moment30.jpeg' },
+  { id: 31, image: 'moment31.jpeg' },
+  { id: 32, image: 'moment32.jpeg' },
+  { id: 33, image: 'moment33.jpeg' },
+  { id: 34, image: 'moment34.jpeg' },
+  { id: 35, image: 'moment35.jpeg' },
+  { id: 36, image: 'moment36.jpeg' },
+  { id: 37, image: 'moment37.jpeg' },
+  { id: 38, image: 'moment38.jpeg' },
+  { id: 39, image: 'moment39.jpeg' },
 
 ];
 
